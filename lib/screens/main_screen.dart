@@ -5,7 +5,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromRGBO(243, 243, 243, 1),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 70),
@@ -45,6 +45,19 @@ class MainScreen extends StatelessWidget {
                           ),
                           TextSpan(text: " with AI"),
                         ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Image.asset(
+                      "assets/images/FiveStars.webp",
+                      scale: 2,
+                    ),
+                    const Text(
+                      "Over 4,000 5-star reviews",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
                       ),
                     ),
                   ],
