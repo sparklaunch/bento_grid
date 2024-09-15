@@ -319,6 +319,43 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(249, 235, 222, 1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    RichText(
+                      text: const TextSpan(
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 27,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        children: [
+                          TextSpan(text: "Create and schedule content "),
+                          TextSpan(
+                            text: "quicker.",
+                            style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              color: Color.fromRGBO(107, 72, 215, 1),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Image.asset(
+                      "assets/images/CreatePost.webp",
+                      width: 200,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
