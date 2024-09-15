@@ -222,6 +222,37 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(215, 202, 252, 1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      textAlign: TextAlign.center,
+                      "Schedule to social media.",
+                      style: TextStyle(
+                        fontSize: 27,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Image.asset("assets/images/SchedulePosts.webp"),
+                    const SizedBox(height: 20),
+                    const Text(
+                      textAlign: TextAlign.center,
+                      "Optimize post timings to publish content at the perfect time for your audience.",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
