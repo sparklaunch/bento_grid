@@ -71,6 +71,7 @@ class MainScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Row(
                       children: [
@@ -172,12 +173,21 @@ class MainScreen extends StatelessWidget {
                                       ),
                                     ),
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           ),
                         ),
                       ],
+                    ),
+                    const SizedBox(height: 20),
+                    const Text(
+                      "Manage multiple accounts and platforms.",
+                      style: TextStyle(
+                        fontSize: 27,
+                        fontWeight: FontWeight.bold,
+                        height: 1,
+                      ),
                     ),
                   ],
                 ),
