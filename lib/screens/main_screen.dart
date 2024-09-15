@@ -253,6 +253,36 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(107, 72, 215, 1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Center(
+                      child: Image.asset(
+                        "assets/images/GrowFollowers.webp",
+                        width: 240,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    const Text(
+                      textAlign: TextAlign.center,
+                      "Grow followers with non-stop content.",
+                      style: TextStyle(
+                        fontSize: 32,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        height: 1,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
