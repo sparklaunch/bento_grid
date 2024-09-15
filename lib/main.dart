@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: MainScreen(),
+    MaterialApp(
+      theme: ThemeData(
+        fontFamily: "DMSans",
+      ),
+      home: const MainScreen(),
     ),
   );
 }
