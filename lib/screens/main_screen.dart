@@ -121,7 +121,7 @@ class MainScreen extends StatelessWidget {
                                       ),
                                     ),
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           ),
@@ -335,6 +335,7 @@ class MainScreen extends StatelessWidget {
                           color: Colors.black,
                           fontSize: 27,
                           fontWeight: FontWeight.bold,
+                          height: 1,
                         ),
                         children: [
                           TextSpan(text: "Create and schedule content "),
@@ -351,7 +352,33 @@ class MainScreen extends StatelessWidget {
                     const SizedBox(height: 20),
                     Image.asset(
                       "assets/images/CreatePost.webp",
-                      width: 200,
+                      width: 240,
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(255, 197, 94, 1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Write your content using AI.",
+                      style: TextStyle(
+                        fontSize: 27,
+                        fontWeight: FontWeight.bold,
+                        height: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Image.asset(
+                      "assets/images/AiContent.webp",
+                      width: 240,
                     ),
                   ],
                 ),
