@@ -63,6 +63,125 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(40),
+                              boxShadow: const [
+                                BoxShadow(
+                                  blurRadius: 3,
+                                  spreadRadius: 3,
+                                  color: Colors.black12,
+                                  offset: Offset(3, 3),
+                                ),
+                              ],
+                            ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Color.fromRGBO(255, 197, 94, 1),
+                                  ),
+                                  padding: const EdgeInsets.all(10),
+                                  child: const Icon(
+                                    Icons.logo_dev,
+                                    color: Color.fromRGBO(107, 72, 215, 1),
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "@YourCo",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "12K Followers",
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(170, 170, 170, 1),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(40),
+                              boxShadow: const [
+                                BoxShadow(
+                                  blurRadius: 3,
+                                  spreadRadius: 3,
+                                  color: Colors.black12,
+                                  offset: Offset(3, 3),
+                                ),
+                              ],
+                            ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Color.fromRGBO(255, 197, 94, 1),
+                                  ),
+                                  padding: const EdgeInsets.all(10),
+                                  child: const Icon(
+                                    Icons.logo_dev,
+                                    color: Color.fromRGBO(107, 72, 215, 1),
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "@YourCo",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "8K Followers",
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(170, 170, 170, 1),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
